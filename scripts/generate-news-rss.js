@@ -87,6 +87,13 @@ class HTMLToRSSConverter {
     <title>ORI Newsletter Feed</title>
     <description>RSS feed generated from ORI newsletter HTML</description>
     <link>https://openresearchinstitute.org/news.html</link>
+    <image>
+      <url>https://openresearchinstitute.org/assets/gradient-circle.png</url>
+      <title>ORI Newsletter Feed</title>
+      <link>https://openresearchinstitute.org</link>
+      <width>144</width>
+      <height>144</height>
+    </image>
     <lastBuildDate>${now}</lastBuildDate>
     <pubDate>${now}</pubDate>
     <language>en-us</language>

@@ -3,9 +3,14 @@
   <channel>
     <title>ORI Newsletter Feed</title>
     <description>RSS feed generated from ORI newsletter HTML</description>
-    <link>https://example.com</link>
-    <lastBuildDate>2025-07-24T13:55:15.238Z</lastBuildDate>
-    <pubDate>2025-07-24T13:55:15.238Z</pubDate>
+    <link>https://openresearchinstitute.org/news.html</link>
+    <image>
+      <url>https://openresearchinstitute.org/assets/gradient-circle.png</url>
+      <title>ORI Newsletter Feed</title>
+      <link>https://openresearchinstitute.org</link>
+    </image>
+    <lastBuildDate>2025-07-24T14:11:16.847Z</lastBuildDate>
+    <pubDate>2025-07-24T14:11:16.847Z</pubDate>
     <language>en-us</language>
 
     <item>
