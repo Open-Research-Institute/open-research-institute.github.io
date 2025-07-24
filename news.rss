@@ -8,14 +8,17 @@
       <url>https://openresearchinstitute.org/assets/gradient-circle.png</url>
       <title>ORI Newsletter Feed</title>
       <link>https://openresearchinstitute.org</link>
+      <width>144</width>
+      <height>144</height>
     </image>
-    <lastBuildDate>2025-07-24T14:11:16.847Z</lastBuildDate>
-    <pubDate>2025-07-24T14:11:16.847Z</pubDate>
+    <lastBuildDate>2025-07-24T14:17:32.828Z</lastBuildDate>
+    <pubDate>2025-07-24T14:17:32.828Z</pubDate>
     <language>en-us</language>
 
     <item>
       <title><![CDATA[ORI newsletter #1 - Hello World]]></title>
       <description><![CDATA[July 21, 2025 - by Defender]]></description>
+      <link>https://openresearchinstitute.org/news.html</link>
       <pubDate>2025-07-21T04:00:00.000Z</pubDate>
       <author><![CDATA[Defender]]></author>
       <guid isPermaLink="false">T1JJIG5ld3NsZXR0ZXIgIzEgLSBIZWxsbyBXb3JsZC0yMDI1LTA3LTIxVDA0OjAwOjAwLjAwMFo</guid>

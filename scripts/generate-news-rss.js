@@ -104,6 +104,7 @@ class HTMLToRSSConverter {
     <item>
       <title><![CDATA[${item.title}]]></title>
       <description><![CDATA[${item.originalSubtitle}]]></description>
+      <link>https://openresearchinstitute.org/news.html</link>
       <pubDate>${item.date}</pubDate>
       <author><![CDATA[${item.author}]]></author>
       <guid isPermaLink="false">${this.generateGUID(item)}</guid>
