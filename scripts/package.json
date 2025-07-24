@@ -1,0 +1,15 @@
+{
+  "name": "html-to-rss-converter",
+  "version": "1.0.0",
+  "description": "Convert HTML newsletter to RSS feed",
+  "main": "converter.js",
+  "type": "module",
+  "scripts": {
+  },
+  "dependencies": {
+    "jsdom": "^22.1.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

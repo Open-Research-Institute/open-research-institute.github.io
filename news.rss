@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>ORI Newsletter Feed</title>
+    <description>RSS feed generated from ORI newsletter HTML</description>
+    <link>https://example.com</link>
+    <lastBuildDate>2025-07-24T13:55:15.238Z</lastBuildDate>
+    <pubDate>2025-07-24T13:55:15.238Z</pubDate>
+    <language>en-us</language>
+
+    <item>
+      <title><![CDATA[ORI newsletter #1 - Hello World]]></title>
+      <description><![CDATA[July 21, 2025 - by Defender]]></description>
+      <pubDate>2025-07-21T04:00:00.000Z</pubDate>
+      <author><![CDATA[Defender]]></author>
+      <guid isPermaLink="false">T1JJIG5ld3NsZXR0ZXIgIzEgLSBIZWxsbyBXb3JsZC0yMDI1LTA3LTIxVDA0OjAwOjAwLjAwMFo</guid>
+    </item>
+  </channel>
+</rss>
