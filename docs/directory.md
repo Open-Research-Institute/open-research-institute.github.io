@@ -29,6 +29,8 @@ Currently taking the [Merkavah Mysticism Seminar](https://www.patreon.com/posts/
 
 ---
 
+## Backlog
+
 Backlog of people to include/introduce to ORI. Not everyone in this list endorses or is aware of ORI. They may have yet to be invited/accepted an invitation.
 
 - https://x.com/suntzoogway - formalizing morality, "universal alignment", creating a new scientific field of "philodosy"
