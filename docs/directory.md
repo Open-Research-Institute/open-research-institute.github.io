@@ -27,18 +27,10 @@ ORI's mysticism/kabbalah expert. Also watches the evolving memetic landscape/top
 
 Currently taking the [Merkavah Mysticism Seminar](https://www.patreon.com/posts/merkavah-seminar-134297201) with Defender. Seminar taught by Dr. Justin Sledge - https://www.justinsledge.com/bio.  
 
----
+----
 
 ## Backlog
 
 Backlog of people to include/introduce to ORI. Not everyone in this list endorses or is aware of ORI. They may have yet to be invited/accepted an invitation.
 
-- https://x.com/suntzoogway - formalizing morality, "universal alignment", creating a new scientific field of "philodosy"
-
-> Morality is objective relative to the frame of the subject, ergo it's not objective vs subjective that's a false dichotomy, it's an integration just like w/ einsteins general relativity.
-> https://x.com/suntzoogway/status/1924183215285109086
-
-- https://x.com/sunriseoath - ORI's resident Christian theologian, advanced/esoteric theology "from first principles". Theology as a technical, rigorous discipline (closer to math than the humanities)
-- David Rug, Project Liminiality, working on [The InterBrain - How Collective DreamWeaving Can Heal the World ](https://www.youtube.com/watch?v=v5dBRmjF8mc) - this is a piece of open source infrastructure that acts as a "memetic vaccine" for society if successful, but at the very least is a necessary infra that ORI itself needs.
-
-See also [GitHub issue for "people I want to invite"](https://github.com/Open-Research-Institute/open-research-institute.github.io/issues/5)
+See: https://github.com/Open-Research-Institute/open-research-institute.github.io/issues/5
