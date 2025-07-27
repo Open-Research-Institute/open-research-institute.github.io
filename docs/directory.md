@@ -14,7 +14,7 @@ See:
 
 #### **Sam Senchal** (https://x.com/samsenchal)
 
-Owner of a finance/trading business. Started contributing to academic work after seeing Wolfram's work, recognizing a few missing pieces, and emailing him about it. See "Observer Theory":
+Researcher / Novelist / Investor. Started contributing to academic work after seeing Wolfram's work, recognizing a few missing pieces, and emailing him about it. See "Observer Theory":
 
 - (paper, published with Wolfram Institute / endorsed by Stephen Wolfram) [Observer Theory and the Ruliad: An Extension to the Wolfram Model](https://wolframinstitute.org/output/observer-theory-and-the-ruliad-an-extension-to-the-wolfram-model)
 - (layperson / entry point version) [Beyond Matter: How Information Shapes Reality and Why You Should Care](https://x.com/samsenchal/status/1923395174954066293)
