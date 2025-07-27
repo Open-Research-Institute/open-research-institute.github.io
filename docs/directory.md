@@ -1,6 +1,6 @@
 # Directory 
 
-**Defender** (https://defenderofbasic.github.io/notebook/)
+#### **Defender** (https://defenderofbasic.github.io/notebook/)
 
 Ex software engineer / game dev. Two main directions now are (1) evangelizing "open memetics" so that we can do cultural engineering & debugging openly and outcompete those doing it in the dark (2) coordination theory & application, finding problems in civilization where solutions already exist but aren't being used. ORI is an applied example of this. Those on the frontier of science can't find each other, but once they do, major breakthroughs happen. My work with open memetics is also an example of this: the investors existed, the builders & scientists existed, the desire from the masses there (but latent). All I did was do enough science communication to connect all the pieces.
 
@@ -12,7 +12,7 @@ See:
 
 ----
 
-**Sam Senchal** (https://x.com/samsenchal)
+#### **Sam Senchal** (https://x.com/samsenchal)
 
 Owner of a finance/trading business. Started contributing to academic work after seeing Wolfram's work, recognizing a few missing pieces, and emailing him about it. See "Observer Theory":
 
@@ -21,7 +21,7 @@ Owner of a finance/trading business. Started contributing to academic work after
 
 ----
 
-**Katz** (https://x.com/VerumExChao)
+#### **Katz** (https://x.com/VerumExChao)
 
 ORI's mysticism/kabbalah expert. Also watches the evolving memetic landscape/topology. 
 
