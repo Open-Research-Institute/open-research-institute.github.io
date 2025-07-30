@@ -1,3 +1,5 @@
+_If you're new here, see [CONTRIBUTING.md](../CONTRIBUTING.md)_
+
 # Directory 
 
 #### **Defender** (https://defenderofbasic.github.io/notebook/)
