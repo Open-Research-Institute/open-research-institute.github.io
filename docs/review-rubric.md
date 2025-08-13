@@ -26,3 +26,9 @@ If only one of us can produce **A+** for the other, then the giver is a mentor.
 Everyone in ORI should connect with someone "one step above" and "one step below". The more people you can level, the more you can accelerate others finding their place. 
 
 <img width="350" height="969" alt="image" src="https://github.com/user-attachments/assets/fcac6eb3-4100-47ab-b5ba-7b1ba4391e26" />
+
+----
+
+See also:
+
+- [Unfakeable Signals of Good Faith](https://defenderofthebasic.substack.com/p/unfakeable-signals-of-good-faith) - I reflect on this protocol of how to make every interaction useful, even if the other person is not playing along/implementing this same protocol. This is what makes it REALLY powerful I think, it works assymetrically. 
