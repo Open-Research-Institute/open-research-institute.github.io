@@ -11,4 +11,5 @@ Reviews of others work count as a "bridge". Example: [Defender's review of Hank 
 See also:
 
 - [ORI review rubric](https://github.com/Open-Research-Institute/open-research-institute.github.io/blob/main/docs/review-rubric.md) for mutually beneficial reviews
+- [ORI onboarding book](https://github.com/Open-Research-Institute/onboarding/issues) - this is an attempt to create a "minimum set of concepts" that everyone in ORI understands, that are not yet widely understood in the general public/the frontier of LLMs, and that are necessary to push forward.
 - [Defender's notebook GitHub](https://github.com/DefenderOfBasic/notebook/issues) which serves as a place tracking reviews/active projects. It's technically public but less visibility/broadcasting than twitter or substack
