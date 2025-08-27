@@ -8,7 +8,7 @@ Ex software engineer / game dev. Two main directions now are (1) evangelizing "o
 
 See:
 
-- (layperson, memetics 101) [A Beginner's Guide to Culture Science](defenderofthebasic.substack.com/p/a-beginners-guide-to-culture-science)
+- (layperson, memetics 101) [A Beginner's Guide to Culture Science](https://defenderofthebasic.substack.com/p/a-beginners-guide-to-culture-science)
 - [Anatomy of an Internet Argument](https://defenderofthebasic.substack.com/p/anatomy-of-an-internet-argument) - this is a protocol for studying cultures, trying to change their mind/spread an idea, and then writing about it in a way that others can reproduce, AND in a way that is fully transparent to both sides. 
 - [How do we bootstrap the open research institute?](https://defenderofthebasic.substack.com/p/how-do-we-bootstrap-the-open-research) - early thoughts around how ORI can launch new paradigms via a semantic engine social network sort of thing
 
