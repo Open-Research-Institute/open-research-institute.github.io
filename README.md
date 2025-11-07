@@ -1,3 +1,3 @@
-# Open Research Institute 
+# ORI website
 
-[OpenResearchInstitute.org](https://OpenResearchInstitute.org/)
+https://OpenResearchInstitute.org/
