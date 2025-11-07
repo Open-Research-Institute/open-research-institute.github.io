@@ -25,6 +25,8 @@ class HTMLToRSSConverter {
     newsSections.forEach(section => {
       const titleElement = section.querySelector('h3.title');
       const subtitleElement = section.querySelector('p.subtitle');
+      const body = section.querySelectorAll('p')
+      const firstParagraph = body[1].textContent.trim()
       
       if (titleElement && subtitleElement) {
         const title = titleElement.textContent.trim();
@@ -37,7 +39,8 @@ class HTMLToRSSConverter {
           title,
           date,
           author,
-          originalSubtitle: subtitleText
+          originalSubtitle: subtitleText,
+          firstParagraph
         });
       }
     });
@@ -103,7 +106,7 @@ class HTMLToRSSConverter {
       rss += `
     <item>
       <title><![CDATA[${item.title}]]></title>
-      <description><![CDATA[${item.originalSubtitle}]]></description>
+      <description><![CDATA[${item.firstParagraph}]]></description>
       <link>https://openresearchinstitute.org/news.html</link>
       <pubDate>${item.date}</pubDate>
       <author><![CDATA[${item.author}]]></author>
