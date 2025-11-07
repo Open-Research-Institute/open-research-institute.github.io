@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 
 function App() {
 	const [isReady, setIsReady] = useState(false)
-	const [snapshotData, setSnapshotData] = useState(null)
+	const [snapshotData, setSnapshotData] = useState<any>(null)
 
 	// Fetch the file on component mount
 	useEffect(() => {
