@@ -28,7 +28,6 @@ function App() {
 	const fetchHomepageTldrawFile = async () => {
 		const result = await fetch('/index.tldr')
 		const json = await result.json()
-		console.log(json)
 		// const converted = convertTldrToSnapshot(json)
 		setSnapshotData(json)
 		setIsReady(true)
@@ -81,18 +80,18 @@ function LoadingScreen() {
 	)
 }
 
-const convertTldrToSnapshot = (tldrData: any) => {
-	const store: any = {}
+// const convertTldrToSnapshot = (tldrData: any) => {
+// 	const store: any = {}
 	
-	tldrData.records.forEach((record: any) => {
-		store[record.id] = record
-	})
+// 	tldrData.records.forEach((record: any) => {
+// 		store[record.id] = record
+// 	})
 
-	return {
-		store: store,
-		schema: tldrData.schema
-	}
-}
+// 	return {
+// 		store: store,
+// 		schema: tldrData.schema
+// 	}
+// }
 
 const saveFile = async (editor: Editor, filename: string = 'index') => {
 	try {
