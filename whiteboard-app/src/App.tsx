@@ -19,8 +19,13 @@ function App() {
 	}
 
 	const handleMount = (editor: Editor) => {
+		const isDevelopment = import.meta.env.DEV
+		const mode = import.meta.env.MODE
+		
 		console.log('onMount')
-		editor.updateInstanceState({ isReadonly: true })
+		console.log('Environment:', isDevelopment ? 'DEV' : 'PROD', `(mode: ${mode})`)
+				
+		editor.updateInstanceState({ isReadonly: (isDevelopment == false) })
 		
 		if (snapshotData) {
 			loadSnapshot(editor.store, snapshotData)
