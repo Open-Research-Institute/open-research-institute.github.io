@@ -5,6 +5,22 @@ function App() {
 	const [isReady, setIsReady] = useState(false)
 	const [snapshotData, setSnapshotData] = useState<any>(null)
 	const editorRef = useRef<Editor | null>(null)
+	const [notification, setNotification] = useState<string | null>(null)
+
+	// Auto-dismiss notification after 2 seconds
+	useEffect(() => {
+		if (notification) {
+			const timer = setTimeout(() => {
+				setNotification(null)
+			}, 2000)
+			return () => clearTimeout(timer)
+		}
+	}, [notification])
+
+	// Function to show notification
+	const showNotification = (text: string) => {
+		setNotification(text)
+	}
 
 	// Fetch the file on component mount
 	useEffect(() => {
@@ -14,7 +30,7 @@ function App() {
 			if ((e.ctrlKey || e.metaKey) && e.key === 's') {
 			e.preventDefault(); // Prevent browser's save dialog
 			console.log("SAVE")
-			saveFile(editorRef.current!);
+			saveFile(editorRef.current!, showNotification);
 			}
 		};
 
@@ -61,6 +77,7 @@ function App() {
 				onMount={handleMount}
 				licenseKey={"tldraw-2026-02-15/WyI5R1FkWTZNMyIsWyIqIl0sMTYsIjIwMjYtMDItMTUiXQ.ugmNPpEZku5mG2j2Af8ObzD3FurasGWQqFx8yiN08hcfz6VWLbohDDEsj4PaVMxZtyf1Cl9zU6O1kRiHprmwTw"} 
 			/>
+			<Notification text={notification} />
 		</div>
 	)
 }
@@ -80,6 +97,25 @@ function LoadingScreen() {
 	)
 }
 
+function Notification({ text }: { text: string | null }) {
+	if (!text) return null
+
+	return (
+		<div style={{
+			position: 'fixed',
+			bottom: '20px',
+			right: '20px',
+			color: 'gray',
+			padding: '12px 20px',
+			fontSize: '14px',
+			fontFamily: 'system-ui, -apple-system, sans-serif',
+			zIndex: 10000,
+		}}>
+			{text}
+		</div>
+	)
+}
+
 // const convertTldrToSnapshot = (tldrData: any) => {
 // 	const store: any = {}
 	
@@ -93,7 +129,7 @@ function LoadingScreen() {
 // 	}
 // }
 
-const saveFile = async (editor: Editor, filename: string = 'index') => {
+const saveFile = async (editor: Editor, showNotification: (text: string) => void, filename: string = 'index') => {
 	try {
 		const snapshot = getSnapshot(editor.store)
 
@@ -104,8 +140,10 @@ const saveFile = async (editor: Editor, filename: string = 'index') => {
 		});
 		const result = await response.json();
 		console.log('Saved:', result);
+		showNotification('saved');
 	} catch (error) {
 		console.error('Save failed:', error);
+		showNotification('(ERROR SAVING)');
 	}
 };
 
