@@ -1,24 +1,41 @@
-import { Tldraw, Editor, loadSnapshot } from 'tldraw'
-import { useState, useEffect } from 'react'
+import { Tldraw, Editor, loadSnapshot, getSnapshot } from 'tldraw'
+import { useState, useEffect, useRef } from 'react'
 
 function App() {
 	const [isReady, setIsReady] = useState(false)
 	const [snapshotData, setSnapshotData] = useState<any>(null)
+	const editorRef = useRef<Editor | null>(null)
 
 	// Fetch the file on component mount
 	useEffect(() => {
 		fetchHomepageTldrawFile()
+		
+		const handleKeyDown = (e: KeyboardEvent) => {
+			if ((e.ctrlKey || e.metaKey) && e.key === 's') {
+			e.preventDefault(); // Prevent browser's save dialog
+			console.log("SAVE")
+			saveFile(editorRef.current!);
+			}
+		};
+
+		window.addEventListener('keydown', handleKeyDown);
+		return () => {
+			window.removeEventListener('keydown', handleKeyDown)
+		}
+
 	}, [])
 
 	const fetchHomepageTldrawFile = async () => {
 		const result = await fetch('/index.tldr')
 		const json = await result.json()
-		const converted = convertTldrToSnapshot(json)
-		setSnapshotData(converted)
+		console.log(json)
+		// const converted = convertTldrToSnapshot(json)
+		setSnapshotData(json)
 		setIsReady(true)
 	}
 
 	const handleMount = (editor: Editor) => {
+		editorRef.current = editor // Store the editor reference
 		const isDevelopment = import.meta.env.DEV
 		const mode = import.meta.env.MODE
 		
@@ -76,5 +93,21 @@ const convertTldrToSnapshot = (tldrData: any) => {
 		schema: tldrData.schema
 	}
 }
+
+const saveFile = async (editor: Editor, filename: string = 'index') => {
+	try {
+		const snapshot = getSnapshot(editor.store)
+
+		const response = await fetch('/api/save-tldraw-file', {
+			method: 'POST',
+			headers: { 'Content-Type': 'application/json' },
+			body: JSON.stringify({ snapshot, filename })
+		});
+		const result = await response.json();
+		console.log('Saved:', result);
+	} catch (error) {
+		console.error('Save failed:', error);
+	}
+};
 
 export default App
