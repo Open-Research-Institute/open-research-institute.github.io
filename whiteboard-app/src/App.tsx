@@ -1,6 +1,15 @@
 import { Tldraw, Editor, loadSnapshot, getSnapshot } from 'tldraw'
 import { useState, useEffect, useRef } from 'react'
 
+/**
+
+TODO
+
+- add a way to, when you paste an image write it to the public/images/ directory
+- 
+
+ */
+
 function App() {
 	const [isReady, setIsReady] = useState(false)
 	const [snapshotData, setSnapshotData] = useState<any>(null)
@@ -24,13 +33,17 @@ function App() {
 
 	// Fetch the file on component mount
 	useEffect(() => {
-		fetchHomepageTldrawFile()
+		// Get page name from query parameter once on mount
+		const params = new URLSearchParams(window.location.search)
+		const pageName = params.get('page') || 'index'
+		
+		fetchTldrawFile(pageName)
 		
 		const handleKeyDown = (e: KeyboardEvent) => {
 			if ((e.ctrlKey || e.metaKey) && e.key === 's') {
 			e.preventDefault(); // Prevent browser's save dialog
 			console.log("SAVE")
-			saveFile(editorRef.current!, showNotification);
+			saveFile(editorRef.current!, showNotification, pageName);
 			}
 		};
 
@@ -38,15 +51,22 @@ function App() {
 		return () => {
 			window.removeEventListener('keydown', handleKeyDown)
 		}
-
 	}, [])
 
-	const fetchHomepageTldrawFile = async () => {
-		const result = await fetch('/index.tldr')
-		const json = await result.json()
-		// const converted = convertTldrToSnapshot(json)
-		setSnapshotData(json)
-		setIsReady(true)
+	const fetchTldrawFile = async (page: string) => {
+		try {
+			const result = await fetch(`/${page}.tldr`)
+			const json = await result.json()
+			// const converted = convertTldrToSnapshot(json)
+			setSnapshotData(json)
+			setIsReady(true)
+		} catch (e) {
+			console.log("Failed to load page", page)
+			console.error(e)
+			// Create a new page
+			setIsReady(true)
+		}
+		
 	}
 
 	const handleMount = (editor: Editor) => {

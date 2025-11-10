@@ -1,0 +1,112 @@
+{
+  "document": {
+    "store": {
+      "document:document": {
+        "gridSize": 10,
+        "name": "",
+        "meta": {},
+        "id": "document:document",
+        "typeName": "document"
+      },
+      "page:page": {
+        "meta": {},
+        "id": "page:page",
+        "name": "Defender",
+        "index": "a1",
+        "typeName": "page"
+      },
+      "shape:4NiqGmyU21vOpH1wxzGDK": {
+        "x": 446.7109375,
+        "y": 296.97265625,
+        "rotation": 0,
+        "isLocked": false,
+        "opacity": 1,
+        "meta": {},
+        "id": "shape:4NiqGmyU21vOpH1wxzGDK",
+        "type": "text",
+        "props": {
+          "color": "black",
+          "size": "m",
+          "w": 152.5859375,
+          "font": "draw",
+          "textAlign": "start",
+          "autoSize": true,
+          "scale": 1,
+          "richText": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "attrs": {
+                  "dir": "auto"
+                },
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Hello world!"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "parentId": "page:page",
+        "index": "a1y8zfAG",
+        "typeName": "shape"
+      }
+    },
+    "schema": {
+      "schemaVersion": 2,
+      "sequences": {
+        "com.tldraw.store": 5,
+        "com.tldraw.asset": 1,
+        "com.tldraw.camera": 1,
+        "com.tldraw.document": 2,
+        "com.tldraw.instance": 25,
+        "com.tldraw.instance_page_state": 5,
+        "com.tldraw.page": 1,
+        "com.tldraw.instance_presence": 6,
+        "com.tldraw.pointer": 1,
+        "com.tldraw.shape": 4,
+        "com.tldraw.asset.bookmark": 2,
+        "com.tldraw.asset.image": 5,
+        "com.tldraw.asset.video": 5,
+        "com.tldraw.shape.group": 0,
+        "com.tldraw.shape.text": 3,
+        "com.tldraw.shape.bookmark": 2,
+        "com.tldraw.shape.draw": 2,
+        "com.tldraw.shape.geo": 10,
+        "com.tldraw.shape.note": 9,
+        "com.tldraw.shape.line": 5,
+        "com.tldraw.shape.frame": 1,
+        "com.tldraw.shape.arrow": 7,
+        "com.tldraw.shape.highlight": 1,
+        "com.tldraw.shape.embed": 4,
+        "com.tldraw.shape.image": 5,
+        "com.tldraw.shape.video": 4,
+        "com.tldraw.binding.arrow": 1
+      }
+    }
+  },
+  "session": {
+    "version": 0,
+    "currentPageId": "page:page",
+    "exportBackground": true,
+    "isFocusMode": false,
+    "isDebugMode": false,
+    "isToolLocked": false,
+    "isGridMode": false,
+    "pageStates": [
+      {
+        "pageId": "page:page",
+        "camera": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "selectedShapeIds": [],
+        "focusedGroupId": null
+      }
+    ]
+  }
+}
