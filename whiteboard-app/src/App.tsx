@@ -5,7 +5,8 @@ import { useState, useEffect, useRef } from 'react'
 
 TODO
 
-- add a way to, when you paste an image write it to the public/images/ directory
+- Avoid storing images inside json file 
+	- When you paste an image write it to the public/images/ directory
 - 
 
  */
