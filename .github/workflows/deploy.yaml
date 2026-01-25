@@ -34,13 +34,13 @@ jobs:
         run: pnpm run build
 
       - name: Create CNAME file
-        run: echo 'openresearchinstitute.org' > ./dist/CNAME
+        run: echo 'openresearchinstitute.org' > ./website/dist/CNAME
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v4
         with:
           name: production-files
-          path: ./dist
+          path: ./website/dist
 
   deploy:
     name: Deploy
