@@ -15,16 +15,24 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 8
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'pnpm'
+      
       - name: Install dependencies
         working-directory: website
-        uses: bahmutov/npm-install@v1
+        run: pnpm install --ignore-scripts
 
       - name: Build project
         working-directory: website
-        run: npm run build
+        run: pnpm run build
 
       - name: Create CNAME file
         run: echo 'openresearchinstitute.org' > ./dist/CNAME
