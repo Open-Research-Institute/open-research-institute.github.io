@@ -5,9 +5,11 @@ import { useState, useEffect, useRef } from 'react'
 
 TODO
 
+- "Last updated"?
 - Avoid storing images inside json file 
 	- When you paste an image write it to the public/images/ directory
-- 
+- Make the public one editable
+- CTRL+S in public downloads the JSON file
 
  */
 

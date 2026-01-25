@@ -1,0 +1,12 @@
+/* 
+By Hanken Design Co.
+https://www.1001fonts.com/glacial-indifference-font.html
+*/
+@font-face {
+  font-family: Glacial-light;
+  src: url("/fonts/glacial-indifference/glacial-indifference.regular.otf");
+}
+@font-face {
+  font-family: Glacial-bold;
+  src: url("/fonts/glacial-indifference/glacial-indifference.bold.otf");
+}
