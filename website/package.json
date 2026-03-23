@@ -2,7 +2,7 @@
   "name": "prosocial-engineering",
   "version": "1.0.0",
   "scripts": {
-    "dev": "vite --port 3000",
+    "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "format": "npx prettier . --write"
