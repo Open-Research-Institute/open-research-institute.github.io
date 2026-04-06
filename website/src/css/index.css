@@ -1,0 +1,55 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  max-width: 640px;
+  margin: 0 auto;
+  color: #1a1a1a;
+}
+
+.word {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.pronunciation {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #555;
+  margin-left: 0.5rem;
+  font-style: normal;
+}
+
+.part-of-speech {
+  font-style: italic;
+  color: #666;
+  margin: 0 0 0.75rem 0;
+  font-size: 0.95rem;
+}
+
+.meaning {
+  margin: 0 0 0.5rem 0;
+  line-height: 1.6;
+}
+
+.number {
+  color: #888;
+  margin-right: 0.25rem;
+}
+
+.etymology {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #888;
+  border-top: 1px solid #ddd;
+  padding-top: 0.75rem;
+}
+
+.label {
+  font-variant: small-caps;
+  margin-right: 0.25rem;
+  color: #aaa;
+}
