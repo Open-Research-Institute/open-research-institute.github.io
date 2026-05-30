@@ -42,7 +42,7 @@ body {
 }
 
 main {
-  max-width: 640px;
+  max-width: 700px;
   margin: 0 auto;
   padding: 6rem 2rem 4rem;
   font-size: 1.05rem;
@@ -123,6 +123,9 @@ main {
 }
 
 /* ── CLOSURE BLOCK ── */
+.closure-small {
+}
+
 .closure {
   margin: 5rem 0;
   text-align: left;
@@ -138,7 +141,7 @@ main {
   margin-bottom: 0.5rem;
 }
 
-.closure-text em {
+em {
   font-style: normal;
   color: var(--accent);
   font-weight: 300;
@@ -178,12 +181,16 @@ main {
 hr {
   border: none;
   border-top: 1px solid var(--rule);
-  margin: 3.5rem 0;
+  margin: 1.5rem 0;
   width: 50%;
 }
 
 p {
   margin-bottom: 0.75rem;
+}
+
+ol {
+  padding-left: 1.5rem;
 }
 
 ul {
@@ -237,19 +244,19 @@ code {
   color: var(--accent);
 }
 
-img {
+/* img {
   max-width: 100%;
   display: block;
   margin-top: 1rem;
   opacity: 0.75;
   filter: brightness(0.7) contrast(1.1);
-}
+} */
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   main {
     padding: 4rem 1.25rem 3rem;
   }
   .closure-text {
     font-size: 1.3rem;
   }
-}
+} */
